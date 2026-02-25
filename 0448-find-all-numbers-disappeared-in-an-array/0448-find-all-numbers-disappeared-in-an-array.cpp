@@ -5,8 +5,9 @@ public:
         vector<int> ans;
         for(int i = 0;i < n;i++){
             int val = abs(nums[i]);
-            if(nums[val - 1] > 0)
+            if(nums[val - 1] > 0){
                 nums[val - 1] *= -1;
+            }
         }
         for(int i = 0;i < n;i++){
             if(nums[i] > 0)
